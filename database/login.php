@@ -18,7 +18,7 @@ if (isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['password'
     // condicción que verifica si hay usuarios en la base de datos
     if (count($row)>0){
         if ($row[6] == 0){
-            $eror = "Su usuario/contraseña no se encuentra activado en nuestra plataforma";
+            $eror = "Su-usuario/contraseña-no-se-encuentra-activado-en-nuestra-plataforma";
             header("Location: ../index?error=$eror");
         }else{
             session_start();
